@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'LEMONMILK';
+    src: url('../fontes/LEMONMILK-Regular.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0:#efdae5b4;
+    --cor1:#CC999F;
+    --cor2:#A0767B;
+    --cor3:#754349;
+    --cor4:#4B1E23;
+    --cor5:#ebc5c9;
+    
+
+    --fote-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-titulo: 'LEMONMILK', sans-serif;
+}
+
+* {
+    margin:0px;
+    padding:0px; 
+ }
+
+ body {
+    background-color: white;
+ }
+
+ header {
+    background-color: white;
+    min-height: 100px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1 {
+    color:black; 
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+nav {
+    background-color: #F6DED4;
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.363);
+}
+
+nav > a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: normal;
+    border-radius: 5px;
+    transition-duration: 1s;
+    font-size: 16px ;
+    font-family: var(--fote-padrao);
+    font-weight: 500;
+}
+
+nav > a:hover {
+    background-color: #e5c3b4;
+    color: black;
+}
+
+
+
+img {
+    width: 100%;
+}
+
+body > h1 {
+    font-family: var(--font-titulo);
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+}
+
+main {
+    background-color: #F6DED4;
+    min-width: 300px;
+    max-width: 1000px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: auto ;
+}
+
+main h1 {
+    font-family: var(--font-titulo);
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1em;
+}
+
+main img {
+    width: 75%;
+    margin: auto;
+    display: block;
+}
+
+div {
+    background-image: linear-gradient(to bottom, #F6DED4, #C3CBD2);
+    text-align: center;
+    height: 235px;
+    width: 235px;
+    display: inline-block;
+    padding: 10px;
+    margin: 60px;
+    /*display: inline-block uma div do lado da outra */
+}
+
+div > p {
+    text-align: left;
+    font-family:'Times New Roman', Times, serif;
+    padding: 3px;
+}
+
+div > p.preço {
+    color: #907876;
+}
+
+footer {
+    background-color: #F6DED4;
+    font-family: var(--font-titulo);
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a {
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+}
